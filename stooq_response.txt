@@ -1,0 +1,7 @@
+Uzyskaj apikey:
+
+1. Otwórz stronę https://stooq.pl/q/d/?s=10de.b&get_apikey
+2. Wpisz kod captcha.
+3. Skopiuj link pobrania pliku CSV znajdujący się w dole strony - będzie zawierał zmienną <apikey>.
+4. Do swoich zapytań dopisz zmienną <apikey> z jej wartością, np.
+   https://stooq.pl/q/d/l/?s=10de.b&d1=20260520&d2=20260605&i=d&apikey=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
