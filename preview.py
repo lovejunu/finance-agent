@@ -91,7 +91,11 @@ cat_news = [
         {"title": "NATO 회원국들 방위비 증액 합의", "en_title": "NATO members agree to increase defense spending", "link": "#", "source": "Defense News", "time": "06/10 07:00"},
         {"title": "중동 지역 긴장 고조, 유가 영향", "en_title": "Middle East tensions escalate, oil prices react", "link": "#", "source": "Breaking Defense", "time": "06/09 16:00"},
     ]),
-    ("정치", "🗳️", [
+    ("국내정치", "🇰🇷", [
+        {"title": "국회, 본회의서 예산안 처리 놓고 여야 대치", "en_title": "", "link": "#", "source": "연합뉴스", "time": "06/10 07:00"},
+        {"title": "여당, 개각 임박설에 술렁", "en_title": "", "link": "#", "source": "한겨레", "time": "06/09 22:00"},
+    ]),
+    ("해외정치", "🌐", [
         {"title": "미 의회, 대규모 인프라 예산안 통과", "en_title": "US Congress passes major infrastructure bill", "link": "#", "source": "Politico", "time": "06/10 06:00"},
         {"title": "G7 정상회의, 무역 정책 공조 논의", "en_title": "G7 summit discusses trade policy coordination", "link": "#", "source": "The Hill", "time": "06/09 21:00"},
     ]),

@@ -1,0 +1,35 @@
+name: Update Dashboard
+
+on:
+  schedule:
+    - cron: "0 23 * * *"   # 매일 08:00 KST (23:00 UTC 전날)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: pip install -r requirements.txt
+
+      - name: 대시보드 생성
+        env:
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: python dashboard.py
+
+      - name: 변경사항 커밋 & 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/index.html
+          git diff --cached --quiet || git commit -m "chore: 대시보드 자동 갱신 $(date -u +%F)"
+          git push

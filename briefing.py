@@ -84,7 +84,12 @@ NEWS_CATEGORIES = [
         ("Breaking Defense", "https://breakingdefense.com/feed/"),
         ("War on the Rocks", "https://warontherocks.com/feed/"),
     ]),
-    ("정치", "🗳️", [
+    ("국내정치", "🇰🇷", [
+        ("연합뉴스",   "https://www.yna.co.kr/rss/politics.xml"),
+        ("한겨레",     "https://www.hani.co.kr/rss/politics/"),
+        ("조선일보",   "https://www.chosun.com/arc/outboundfeeds/rss/category/politics/?outputType=xml"),
+    ]),
+    ("해외정치", "🌐", [
         ("Politico",         "https://www.politico.com/rss/politicopicks.xml"),
         ("The Hill",         "https://thehill.com/feed/"),
         ("AP Politics",      "https://rsshub.app/apnews/politics"),
